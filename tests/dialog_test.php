@@ -58,7 +58,13 @@ abstract class ezcConsoleDialogTest extends ezcTestCase
 
     protected function determinePhpPath()
     {
-        if ( isset( $_SERVER["_"] ) )
+        // The interpreter running the tests; $_SERVER["_"] is whatever the
+        // shell started, which is the phpunit script for "vendor/bin/phpunit".
+        if ( defined( 'PHP_BINARY' ) && PHP_BINARY !== '' )
+        {
+            $this->phpPath = escapeshellarg( PHP_BINARY );
+        }
+        else if ( isset( $_SERVER["_"] ) )
         {
             $this->phpPath = $_SERVER["_"];
         }

@@ -13,6 +13,9 @@ Unreleased - se7enxweb/expcomponents-console-tools
 - Added: NOTICE keeps the upstream copyright notices and names the fork;
   README.md describes the fork.
 - Added: A GitHub Actions workflow running the test suite on PHP 7.4 to 8.5.
+- Fixed: The dialog tests start their scripts with the PHP binary running
+  the suite (PHP_BINARY). They took $_SERVER["_"], which is the phpunit
+  script when the suite is started as vendor/bin/phpunit, and failed.
 
 
 1.7.5 - Friday 04 October 2024
