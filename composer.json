@@ -42,12 +42,16 @@
         ]
     },
     "description": "A set of classes to do different actions with the console (also called shell). It can render a progress bar, tables and a status bar and contains a class for parsing command line options.",
-    "homepage": "https://github.com/zetacomponents",
+    "homepage": "https://github.com/se7enxweb/expcomponents-console-tools",
     "license": "Apache-2.0",
-    "name": "zetacomponents/console-tools",
+    "name": "se7enxweb/expcomponents-console-tools",
     "type": "library",
     "require": {
-        "zetacomponents/base": "~1.8"
+        "php": ">=7.1",
+        "se7enxweb/expcomponents-base": "~1.8"
+    },
+    "replace": {
+        "zetacomponents/console-tools": "self.version"
     },
     "require-dev": {
         "phpunit/phpunit": "~9.0",
