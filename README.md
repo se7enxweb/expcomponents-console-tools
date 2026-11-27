@@ -2,7 +2,7 @@
 
 A set of classes to do different actions with the console (also called shell). It can render a progress bar, tables and a status bar and contains a class for parsing command line options.
 
-This is the Exponential fork of [zetacomponents/ConsoleTools](https://github.com/zetacomponents/ConsoleTools),
+This is the Exponential Components fork of [zetacomponents/ConsoleTools](https://github.com/zetacomponents/ConsoleTools),
 maintained by 7x (se7en.x) and the Exponential Foundation for Exponential and anyone else
 who uses the Zeta Components ConsoleTools component on current PHP versions. All credit for the
 component goes to the Zeta Components authors listed in `composer.json` and `CREDITS`;
